@@ -1,6 +1,6 @@
 from pydantic import BaseModel, validator
 from datetime import datetime
-
+import os
 class TradeCreate(BaseModel):
     ticker: str
     price: float
