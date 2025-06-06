@@ -2,6 +2,7 @@ from fastapi import FastAPI, Depends
 from .database import engine
 from . import models
 from .routers import trades
+import os
 
 models.Base.metadata.create_all(bind=engine)
 
