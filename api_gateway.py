@@ -1,7 +1,7 @@
 import boto3
 import json
 from lambda_handler import lambda_handler
-
+import os
 def api_gateway_handler(event, context):
     # Extract date from query parameters
     query_params = event.get('queryStringParameters', {})
