@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, Float, Integer, DateTime
 from .database import Base
-import os,math
+import os,math,matplotlib
 class Trade(Base):
     __tablename__ = "trades"
     id = Column(Integer, primary_key=True, index=True)
