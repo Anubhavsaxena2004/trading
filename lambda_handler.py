@@ -1,7 +1,7 @@
 import boto3
 import csv
 from io import StringIO
-import os
+import os,math
 
 s3 = boto3.client('s3')
 BUCKET_NAME = 'my-trading-data'  # Replace with your bucket name
