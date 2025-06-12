@@ -3,7 +3,7 @@ from collections import deque
 from tasks import notify_threshold
 import requests
 from datetime import datetime
-import os,math
+import os,math,matplotlib
 
 PRICE_HISTORY = {}  # {ticker: deque(maxlen=60)}
 AVG_PRICES = {}  # {ticker: [prices]}
